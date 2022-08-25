@@ -415,7 +415,8 @@ body{
     height: 356px;
 }
 .frooter__end {
-    margin-top: 38px;
+    background: #2C384A;
+    padding-top: 38px;
     text-align: center;
     height: 90px;
 }
