@@ -407,10 +407,14 @@ body{
     font-size: 21px;
     font-family: 'Franklin Gothic Medium',sans-serif;
     border-radius: 5px;
-    margin: 28px 0 242px 306px;
+    margin: 28px 0 80px 306px;
 
 }
+.footer__social a {
+    margin-left: 70px;
+}
 .footer__map img{
+    margin-top: 80px;
     width: 100%;
     height: 356px;
 }
@@ -426,4 +430,5 @@ body{
     font-family: 'ArialMT',sans-serif;
     color: #fff;
 }
+
 
