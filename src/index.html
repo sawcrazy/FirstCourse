@@ -9,39 +9,42 @@
 <body>
     <header class="header">
         <nav class="header__nav">
-            <div class="header__logo"> АNDREY</div>
+            <div class="header__logo"> АNDREY NIKULIN</div>
             <div class="header__menu">
                 <ul class="header__menu-list">
-                    <li class="header__menu-item"> <a class="" href="#" >Обо мне</a></li>
-                    <li class="header__menu-item"> <a class="" href="#" >Услуги</a></li>
-                    <li class="header__menu-item"> <a class="" href="#" >Кейсы</a></li>
-                    <li class="header__menu-item"> <a class="" href="#" >Прайс</a></li>
-                    <li class="header__menu-item"> <a class="" href="#" >Отзывы</a></li>
-                    <li class="header__menu-item"> <a class="" href="#" >Контакты</a></li>
+                    <li class="header__menu-item"> <a href="#" >Обо мне</a></li>
+                    <li class="header__menu-item"> <a href="#" >Услуги</a></li>
+                    <li class="header__menu-item"> <a href="#" >Кейсы</a></li>
+                    <li class="header__menu-item"> <a href="#" >Прайс</a></li>
+                    <li class="header__menu-item"> <a href="#" >Отзывы</a></li>
+                    <li class="header__menu-item"> <a href="#" >Контакты</a></li>
                 </ul>
             </div>
         </nav>
-        <div class="header__content">
-            <div class="header__content-info">
+    </header>
+        <div class="greetings">
+            <div class="greetings__info">
                 <h1>Привет <br> Я Андрей Никулин</h1>
                 <h4> Фулл стек веб - разрабочик</h4>
-                <input class="header__content-input" type="submit" value="Обо мне">
-                <input class="header__content-input" type="submit" value="Мои работы">
-
+                <input class="greetings__info-input" type="submit" value="Обо мне">
+                <input class="greetings__info-input" type="submit" value="Мои работы">
             </div>
         </div>
-    </header>
+
 
     <section class="myinfo">
         <div class="titel">
             <h2>ОБО МНЕ</h2>
             <img src="imgs/trait.svg">
         </div>
-        <img src="imgs/avatarMini.png">
+        <img class="myinfo__avatar"src="imgs/avatarMini.png">
         <div class="myinfo__text">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci fuga magnam quam repellat repellendus! Aliquam fugiat ratione voluptatem. Natus, similique.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci fuga magnam quam repellat repellendus! Aliquam fugiat ratione voluptatem. Natus, similique.</p>
-            <input class="myinfo__input" type="submit" value="Скачать резюме">
+            <div class="myinfo__input">
+                <input type="submit" value="Скачать резюме">
+            </div>
+
         </div>
     </section>
     <section class="skills">
@@ -82,17 +85,19 @@
         </div>
         <div class="cases__slider">
             <img src="imgs/cases.png">
-            <div class="cases__slider-text">
-                <h3>CLIENT:</h3>
-                <p>Какая-то компания</p>
-                <h3>WEBSITE:</h3>
-                <p><a href="http://www.somedomain.com">http://www.somedomain.com</a> </p>
-                <button class="cases__btn">VISIT LIVE SITE</button>
-            </div>
-            <div class="cases__slider-info">
-                <h4>Название проекта</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit., sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim i</p>
-            </div>
+            <div class="cases__slider-content">
+                <div class="cases__slider-text">
+                    <h3>CLIENT:</h3>
+                    <p>Какая-то компания</p>
+                    <h3>WEBSITE:</h3>
+                    <p><a href="http://www.somedomain.com">http://www.somedomain.com</a> </p>
+                    <button class="cases__btn">VISIT LIVE SITE</button>
+                </div>
+                <div class="cases__slider-info">
+                    <h4>Название проекта</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit., sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+             </div>
         </div>
     </section>
     <section class="price">
@@ -119,11 +124,18 @@
                 <option value="карпоративный сайт">карпоративный сайт</option>
                 <option value="блог">блог</option>
             </select>
+            <hr>
         </div>
-        <hr>
+
         <div class="price__total">
-            <p>Сроки 0</p>
-            <p>Стоимость 0</p>
+            <div class="price__total-text">
+                <p>Сроки</p>
+                <p>Стоимость</p>
+            </div>
+            <div class="price__total-value">
+                <p>0</p>
+                <p>0</p>
+            </div>
         </div>
     </section>
     <section class="statistics">
@@ -162,8 +174,9 @@
         <div class="reviews__slider">
             <img src="imgs/fotorew.png">
             <div class="cases__slider-info">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit., sed do eiusmod tempor incididunt ut labore et dolore </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at duis sed dapidus leo nec ornare diam. </p>
                 <p> <strong>Михайил</strong>, Ген директор ПАО “Газпром”.</p>
+                <img src="imgs/points.svg">
             </div>
         </div>
     </section>
@@ -174,37 +187,43 @@
         </div>
         <div class="footer__contacts">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leo nec ornare diamcoccodo </p>
-            <div class="footer__contacts-info">
-                <img src="imgs/locate.svg">
-                <a href="#">Санкт-Петербур Невский проспект 11</a>
+            <div class="footer__contacts-content">
+                <div class="footer__contacts-info">
+                    <img src="imgs/locate.svg">
+                    <br>
+                    <a href="#">Санкт-Петербур Невский проспект 11</a>
+                </div>
+                <div class="footer__contacts-info">
+                    <img src="imgs/mail.svg">
+                    <br>
+                    <a href="info@companyname.com" type="email">info@companyname.com</a>
+                </div>
+                <div class="footer__contacts-info">
+                    <img src="imgs/phone.svg" type="phone">
+                    <br>
+                    <a href="#">+7 999 999-99-99</a>
+                </div>
             </div>
-            <div class="footer__contacts-info">
-                <img src="imgs/mail.svg">
-                <a href="info@companyname.com" type="email">info@companyname.com</a>
-            </div>
-            <div class="footer__contacts-info">
-                <img src="imgs/phone.svg" type="phone">
-                <a href="#">+7 999 999-99-99</a>
-            </div>
+
             <div class="footer__message">
                 <h3>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h3>
                 <form>
                     <div class="footer__message-name">
-                        <label for="name">Ваше имя</label>
-                        <input type="text" id="name" placeholder="ввидите ваше имя ">
+                        <label for="name"></label>
+                        <input type="text" id="name" placeholder="Имя ">
                     </div>
                     <div class="footer__message-email">
-                        <label for="email">Ваш email </label>
-                        <input type="email" id="email" placeholder="ввидите ваш email ">
+                        <label for="email"></label>
+                        <input type="email" id="email" placeholder="Email ">
                     </div>
                     <div class="footer__message-text">
-                        <label for="massenge">Ваше сообщение :</label>
+                        <label for="massenge"></label>
                         <br>
-                        <textarea  id="massenge" cols="30" rows="10" placeholder="ввидите сообщение..."></textarea>
+                        <textarea  id="massenge" placeholder="Собщение"></textarea>
                     </div>
                     <div class="footer__message-btn">
                         <button type="submit">
-                            отправить
+                            Отправить
                         </button>
                     </div>
 
