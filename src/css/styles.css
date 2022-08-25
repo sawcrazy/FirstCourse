@@ -62,7 +62,6 @@ body{
 .myinfo {
     margin-top: 101px;
     text-align: center;
-    position: center;
 }
 .titel h2{
     color: #263244;
@@ -70,28 +69,24 @@ body{
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 20px;
-
-
-
 }
 .myinfo__avatar {
     margin-top: 44px;
     width: 199px;
     height: 202px;
+    margin-bottom: 38px;
 }
 .myinfo__text {
     font-family: 'Calibri', sans-serif;
-    margin-top: 38px;
     color: #3F495A;
     font-size: 17px;
     width: 763px;
     height: 110px;
-    margin-left: 579px;
+    margin: 0 auto;
 }
 .myinfo__text p {
     padding-bottom: 40px;
     text-align: left;
-
 }
 
 .myinfo__input input{
@@ -104,12 +99,11 @@ body{
     background: url(../imgs/downloadI.svg) 02% 50%/auto 50% no-repeat;
     padding: 0 5px 0 20px;
     color: #6F707E;
-    margin-right: 150px; /*так делать нельзя*/
-
+    margin: 0 auto;
 }
 .skills{
     background: url(../imgs/bg_skills.jpg) center/cover no-repeat;
-    margin-top: 98px;
+    margin-top: 100px;
     padding-top: 100px;
     text-align: center;
 }
@@ -154,6 +148,7 @@ body{
 .cases__slider-content {
     display: flex;
     justify-content:center;
+    margin: 0 auto;
 }
 .cases__slider-text {
     margin-top: 39px;
@@ -213,15 +208,16 @@ body{
     color: #1C2534;
     font-size: 46px;
     font-family: 'Franklin Gothic Medium',sans-serif;
-    margin-bottom: 30px;
+    margin-bottom: 65px;
 }
 .price__content {
-    margin-top: 50px;
-    text-align: left;
-    margin-left: 517px;
+    margin: 0 auto;
+    width: 891px;
+
 
 }
 .price__content h3 {
+    text-align: left;
     margin-top: 36px;
     color: #1C2534;
     font-size: 29px;
@@ -242,13 +238,13 @@ body{
     width: 891px;
     height: 2px;
     background: #EEEEEE;
+    margin-bottom: 15px;
 }
 .price__total {
-    margin-bottom: 149px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     width: 895px;
-    margin-left: 517px;
 
 }
 .price__total-text {
@@ -259,6 +255,9 @@ body{
 }
 .price__total-text p {
     margin-top: 15px;
+}
+.price__total-p {
+    margin-bottom: 150px;
 }
 .price__total-value {
     margin-top: 9px;
@@ -297,23 +296,18 @@ body{
     text-align: center;
 }
 .reviews__slider {
-    margin-top: 55px;
-}
-.cases__slider-info {
-    margin-top: 48px;
-    margin-left: 520px;
-}
-.cases__slider-info p {
+    width: 950px;
+    margin: 0 auto;
     text-align: center;
-    width: 706px;
+}
+.reviews__slider p {
     color: #243042;
     font-size: 17px;
     line-height: 21px;
     font-family: 'Calibri',sans-serif;
     margin-bottom: 27px;
 }
-.cases__slider-info img {
-    margin-left: 320px;
+.reviews__slider img {
     margin-top: 22px;
     margin-bottom: 75px;
 }
@@ -390,7 +384,7 @@ body{
     width: 732px;
     display: flex;
     flex-wrap: wrap;
-    margin-left: 650px;
+    margin: 0 auto;
     justify-content: space-between;
 }
 .footer__message-btn {
