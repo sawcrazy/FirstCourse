@@ -1,10 +1,60 @@
 body{
     font-family: Amiri, sans-serif;
 }
+main {
+    width: 100%;
+    height: 100%;
+    animation: mainon 20s forwards;
+}
+@keyframes mainon {
+    from {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    to {
+        position: static;
+    }
+}
+
+.loader {
+    border: 16px solid #f3f3f3; /* Светло серый */
+    border-top: 16px solid #3498db; /* Синий */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    margin: 0 auto;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+
+    }
+    to {
+        transform: rotate(360deg);
+            }
+}
+.loderoff{
+    position: static;
+    animation: spinoff 20s forwards;
+}
+@keyframes spinoff {
+    from {
+        position: static;
+    }
+    to {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+}
 .header__nav{
     width: 100%;
     height: 60px;
     background: #2C384A;
+    position: fixed;
 }
 .header__logo{
     color: #fff;
@@ -12,6 +62,18 @@ body{
     line-height: 60px;
     padding-left: 388px;
     float: left;
+    animation: comming 2s ease;
+    -webkit-animation: comming 2s ease;
+    -o-animation: comming 2s ease;
+}
+@keyframes comming {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+
 }
 .header__menu{
     float: left;
@@ -24,19 +86,83 @@ body{
     margin-right: 40px;
     font-size: 17px;
     text-transform: uppercase;
+    animation: topshift .4s ease forwards;
+    -webkit-animation: topshift .4s ease forwards;
+    -o-animation: topshift .4s ease forwards;
+    opacity: 0;
+
 }
+.header__menu-item:nth-child(2){
+    animation-delay: .4s;
+}
+.header__menu-item:nth-child(3){
+    animation-delay: .8s;
+}
+.header__menu-item:nth-child(4){
+    animation-delay: 1.2s;
+}
+.header__menu-item:nth-child(5){
+    animation-delay: 1.6s;
+}
+.header__menu-item:nth-child(6){
+    animation-delay: 2s;
+}
+
 .header__menu-item a {
     color: #fff;
+    transition: all 0.5s;
+    display: inline-block;
+    transform: scale(1);
+}
+.header__menu-item a:visited {
+    color: #fff;
+}
+.header__menu-item a:hover {
+    color: #e88604;
+
+}
+.header__menu-item a:active {
+    transform: scale(1.2);
+}
+@keyframes topshift {
+    from {
+        opacity: 0;
+        margin-top: -80px;
+    }
+    to {
+        opacity: 1;
+        margin-top: 0;
+    }
+
 }
 .greetings{
     width: 100%;
-    height: calc(100% - 60px);
+    height: 100%;
     background: url(../imgs/boy.png) 98% 100%/auto 85% no-repeat,url(../imgs/bg_header.jpg) center/cover no-repeat;
 }
 .greetings__info{
     float: left;
     margin: 432px 0 0 404px;
     text-align: center;
+    opacity: 0;
+    animation: tittlemove 1s ease forwards;
+    -webkit-animation: tittlemove 1s ease forwards;
+    -o-animation: tittlemove 1s ease forwards;
+    animation-delay: 2s;
+    -o-animation-delay: 2s;
+    -webkit-animation-delay: 2s;
+
+}
+@keyframes tittlemove {
+    from {
+        opacity: 0;
+        margin-left: -500px;
+    }
+    to {
+        opacity: 1;
+        margin-left: 404px;
+    }
+
 }
 .greetings__info h1 {
     font-size: 83px;
@@ -58,6 +184,16 @@ body{
     font-size: 19px;
     padding: 0 15px;
     margin: 47px 13px 0 13px;
+    transition: all 0.6s;
+    transform: scale(1);
+
+}
+.greetings__info-input:hover {
+    background: #2C384A;
+    color: #fff;
+}
+.greetings__info-input:active {
+    transform: scale(1.2);
 }
 .myinfo {
     margin-top: 101px;
@@ -102,7 +238,7 @@ body{
     margin: 0 auto;
 }
 .skills{
-    background: url(../imgs/bg_skills.jpg) center/cover no-repeat;
+    background: url(../imgs/bg_skills.jpg) center/cover fixed no-repeat;
     margin-top: 100px;
     padding-top: 100px;
     text-align: center;
@@ -269,7 +405,7 @@ body{
     margin-top: 2px;
 }
 .statistics {
-    background: url(../imgs/bg_stat.jpg) center/cover no-repeat;
+    background: url(../imgs/bg_stat.jpg) center/cover fixed no-repeat;
     text-align: center;
     padding-top: 100px;
 }
@@ -313,7 +449,7 @@ body{
 }
 .footer {
     padding-top: 100px;
-    background: url(../imgs/bg_footer.jpg) center/cover no-repeat;
+    background: url(../imgs/bg_footer.jpg) center/cover fixed no-repeat;
     text-align: center;
     color: #fff;
 }
