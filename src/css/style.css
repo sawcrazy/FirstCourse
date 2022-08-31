@@ -4,7 +4,7 @@ body{
 main {
     width: 100%;
     height: 100%;
-    animation: mainon 20s forwards;
+    animation: mainon 15s;
 }
 @keyframes mainon {
     from {
@@ -18,8 +18,8 @@ main {
 }
 
 .loader {
-    border: 16px solid #f3f3f3; /* Светло серый */
-    border-top: 16px solid #3498db; /* Синий */
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
     border-radius: 50%;
     width: 120px;
     height: 120px;
@@ -38,7 +38,7 @@ main {
 }
 .loderoff{
     position: static;
-    animation: spinoff 20s forwards;
+    animation: spinoff 15s forwards;
 }
 @keyframes spinoff {
     from {
@@ -62,9 +62,9 @@ main {
     line-height: 60px;
     padding-left: 388px;
     float: left;
-    animation: comming 2s ease;
-    -webkit-animation: comming 2s ease;
-    -o-animation: comming 2s ease;
+    animation: comming 2s ease 20s;
+    -webkit-animation: comming 2s ease 20s;
+    -o-animation: comming 2s ease 20s;
 }
 @keyframes comming {
     from {
@@ -86,6 +86,7 @@ main {
     margin-right: 40px;
     font-size: 17px;
     text-transform: uppercase;
+    animation-delay: 20s;
     animation: topshift .4s ease forwards;
     -webkit-animation: topshift .4s ease forwards;
     -o-animation: topshift .4s ease forwards;
@@ -223,6 +224,20 @@ main {
 .myinfo__text p {
     padding-bottom: 40px;
     text-align: left;
+    animation: myinfomove 5s  ease forwards;
+}
+.myinfo__text p:nth-child(2){
+    animation: myinfomove 3s  ease forwards;
+}
+
+@keyframes myinfomove {
+    from {
+        margin-left: -100%;
+    }
+    to {
+
+        margin: 0;
+    }
 }
 
 .myinfo__input input{
@@ -237,6 +252,14 @@ main {
     color: #6F707E;
     margin: 0 auto;
 }
+.myinfo__input input:hover{
+    color: red;
+}
+.myinfo__input input:active {
+    transform: scale(1.2);
+}
+
+
 .skills{
     background: url(../imgs/bg_skills.jpg) center/cover fixed no-repeat;
     margin-top: 100px;
@@ -248,12 +271,28 @@ main {
     display: flex;
     justify-content: space-around;
 
+
+}
+@keyframes skillsmove {
+    from {
+        margin-top: -9999px;
+    }
+    to {
+        margin: 0;
+    }
 }
 .skills__content-info{
     text-align: center;
     width: 216px;
+    animation:skillsmove 2s;
 
 }
+.skills__content-info:hover{
+    transform: scale(1.2);
+    font-weight: bold;
+
+}
+
 .skills__content-info h4 {
     color: #CF7600;
     font-size: 19px;
@@ -281,10 +320,14 @@ main {
 .cases__slider{
     margin-top: 38px
 }
+.cases__slider img{
+    animation:slidermove 5s;
+}
 .cases__slider-content {
     display: flex;
     justify-content:center;
     margin: 0 auto;
+    animation:slidermove 5s;
 }
 .cases__slider-text {
     margin-top: 39px;
@@ -294,6 +337,14 @@ main {
     color: #384354;
     font-size: 25px;
     font-family: 'Franklin Gothic Medium',sans-serif;
+}
+@keyframes slidermove {
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 .cases__slider-text p {
     margin-top: 8px;
@@ -315,6 +366,13 @@ main {
     border-radius: 5px;
     margin-bottom: 18px;
 
+
+}
+.cases__btn:hover{
+    background: #CF7600;
+}
+.cases__btn:active{
+    transform: scale(1.2);
 
 }
 .cases__slider-info {
@@ -413,6 +471,21 @@ main {
     margin-top: 75px;
     display: flex;
     justify-content: space-around;
+    animation: statisticsmove 5s;
+}
+@keyframes statisticsmove {
+    0%{
+        opacity: 0;
+        margin-left: 100%;
+
+    }
+    50%{
+        opacity: .5;
+    }
+    100%{
+        margin-left: 0%;
+        opacity:1;
+    }
 }
 .statistics__content-info h4 {
     margin-top: 32px;
@@ -430,6 +503,7 @@ main {
 .reviews {
     margin-top: 100px;
     text-align: center;
+    animation: slidermove 5s;
 }
 .reviews__slider {
     width: 950px;
@@ -447,9 +521,12 @@ main {
     margin-top: 22px;
     margin-bottom: 75px;
 }
+.reviews__slider img:hover{
+    transform: rotate(180deg);
+}
 .footer {
     padding-top: 100px;
-    background: url(../imgs/bg_footer.jpg) center/cover fixed no-repeat;
+    background: url(../imgs/bg_footer.jpg) center/cover no-repeat;
     text-align: center;
     color: #fff;
 }
@@ -528,6 +605,8 @@ main {
     margin-bottom: 100px;
 
 }
+
+
 .footer__message-btn button {
     background: rgba(0, 0, 0, 0.0001);
     border: 2px solid #F9FAFF;
@@ -540,8 +619,18 @@ main {
     margin: 28px 0 80px 306px;
 
 }
+.footer__message-btn button:hover{
+    background: #2C384A;
+    color: #CF7600;
+}
+.footer__message-btn button:active{
+    transform: scale(1.2);
+}
 .footer__social a {
     margin-left: 70px;
+}
+.footer__social img:hover{
+    transform: scale(1.6);
 }
 .footer__map img{
     margin-top: 80px;
