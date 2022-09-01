@@ -50,10 +50,14 @@ main {
     margin-bottom: 20px;
 }
 .loaderon a {
-    color: orangered;
+    color: darkgreen;
     font-size: 30px;
 
 }
+.loaderon a:hover{
+    color: orangered;
+}
+
 @keyframes change {
     0%{
         opacity: 1;
