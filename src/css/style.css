@@ -65,6 +65,7 @@ main {
     animation: comming 2s ease 20s;
     -webkit-animation: comming 2s ease 20s;
     -o-animation: comming 2s ease 20s;
+    animation-delay: 20s;
 }
 @keyframes comming {
     from {
@@ -91,6 +92,7 @@ main {
     -webkit-animation: topshift .4s ease forwards;
     -o-animation: topshift .4s ease forwards;
     opacity: 0;
+    animation-delay: 20s;
 
 }
 .header__menu-item:nth-child(2){
@@ -149,9 +151,10 @@ main {
     animation: tittlemove 1s ease forwards;
     -webkit-animation: tittlemove 1s ease forwards;
     -o-animation: tittlemove 1s ease forwards;
-    animation-delay: 2s;
-    -o-animation-delay: 2s;
-    -webkit-animation-delay: 2s;
+    animation-delay: 22s;
+    -o-animation-delay: 22s;
+    -webkit-animation-delay: 22s;
+
 
 }
 @keyframes tittlemove {
@@ -225,9 +228,11 @@ main {
     padding-bottom: 40px;
     text-align: left;
     animation: myinfomove 5s  ease forwards;
+    animation-delay: 20s;
 }
 .myinfo__text p:nth-child(2){
     animation: myinfomove 3s  ease forwards;
+    animation-delay: 20s;
 }
 
 @keyframes myinfomove {
@@ -322,12 +327,14 @@ main {
 }
 .cases__slider img{
     animation:slidermove 5s;
+    animation-delay: 20s;
 }
 .cases__slider-content {
     display: flex;
     justify-content:center;
     margin: 0 auto;
     animation:slidermove 5s;
+    animation-delay: 20s;
 }
 .cases__slider-text {
     margin-top: 39px;
@@ -504,6 +511,7 @@ main {
     margin-top: 100px;
     text-align: center;
     animation: slidermove 5s;
+    animation-delay: 20s;
 }
 .reviews__slider {
     width: 950px;
