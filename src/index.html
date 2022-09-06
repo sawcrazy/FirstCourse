@@ -4,33 +4,68 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <main>
+
         <header class="header">
             <nav class="header__nav">
-                <div class="header__logo"> АNDREY NIKULIN</div>
-                <div class="header__menu">
-                    <ul class="header__menu-list">
-                        <li class="header__menu-item"> <a href="#" >Обо мне</a></li>
-                        <li class="header__menu-item"> <a href="#" >Услуги</a></li>
-                        <li class="header__menu-item"> <a href="#" >Кейсы</a></li>
-                        <li class="header__menu-item"> <a href="#" >Прайс</a></li>
-                        <li class="header__menu-item"> <a href="#" >Отзывы</a></li>
-                        <li class="header__menu-item"> <a href="#" >Контакты</a></li>
-                    </ul>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xxl-2 col-lg-3 col-7">
+                            <div class="header__logo"> АNDREY NIKULIN</div>
+                        </div>
+                        <div class=" px-0 col-6 col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl-2 offset-lg-1 d-none d-lg-block">
+                            <div class="header__menu">
+                                <ul class="header__menu-list">
+                                    <li class="header__menu-item"> <a href="#" >Обо мне</a></li>
+                                    <li class="header__menu-item"> <a href="#" >Услуги</a></li>
+                                    <li class="header__menu-item"> <a href="#" >Кейсы</a></li>
+                                    <li class="header__menu-item"> <a href="#" >Прайс</a></li>
+                                    <li class="header__menu-item"> <a href="#" >Отзывы</a></li>
+                                    <li class="header__menu-item"> <a href="#" >Контакты</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-5 d-flex d-lg-none flex-column justify-content-center align-items-end">
+                            <div class="dropdown">
+                                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Меню
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-item"> <a href="#" >Обо мне</a></li>
+                                    <li class="dropdown-item"> <a href="#" >Услуги</a></li>
+                                    <li class="dropdown-item"> <a href="#" >Кейсы</a></li>
+                                    <li class="dropdown-item"> <a href="#" >Прайс</a></li>
+                                    <li class="dropdown-item"> <a href="#" >Отзывы</a></li>
+                                    <li class="dropdown-item"> <a href="#" >Контакты</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+
+
             </nav>
         </header>
-
+        <main class="main">
             <section class="greetings">
-                <div class="greetings__info">
-                    <h1>Привет <br> Я Андрей Никулин</h1>
-                    <h4> Фулл стек веб - разрабочик</h4>
-                    <input class="greetings__info-input" type="button" value="Обо мне">
-                    <input class="greetings__info-input" type="button" value="Мои работы">
+                <div class="container h-100">
+                    <div class="row align-items-center h-100">
+                        <div class="col-lg-6 mt-5 pt-5">
+                            <div class="greetings__info mt-5">
+                                <h1>Привет <br> Я Андрей Никулин</h1>
+                                <h4> Фулл стек веб - разрабочик</h4>
+                                <input class="greetings__info-input" type="button" value="Обо мне">
+                                <input class="greetings__info-input" type="button" value="Мои работы">
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
             </section>
         <section class="myinfo">
             <div class="titel">
@@ -244,6 +279,6 @@
             </div>
         </footer>
     </main>
-
+<script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

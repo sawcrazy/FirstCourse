@@ -4,6 +4,7 @@
     <list default="true" id="ce5e211a-8e36-424c-8b72-93260d424e66" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +41,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="JavaScript Debug.loader.html">
+  <component name="RunManager" selected="JavaScript Debug.index.html">
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/MyProject/src/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -49,8 +50,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.loader.html" />
         <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="JavaScript Debug.loader.html" />
       </list>
     </recent_temporary>
   </component>
@@ -70,7 +71,10 @@
       <workItem from="1661754354949" duration="1205000" />
       <workItem from="1661858304642" duration="6988000" />
       <workItem from="1661925770340" duration="7762000" />
-      <workItem from="1662009485369" duration="5005000" />
+      <workItem from="1662009485369" duration="5711000" />
+      <workItem from="1662095920776" duration="609000" />
+      <workItem from="1662377501716" duration="594000" />
+      <workItem from="1662447698954" duration="7491000" />
     </task>
     <servers />
   </component>

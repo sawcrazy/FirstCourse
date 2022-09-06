@@ -75,12 +75,12 @@ main {
     height: 60px;
     background: #2C384A;
     position: fixed;
+    z-index: 10;
 }
 .header__logo{
     color: #fff;
     font-size: 23px;
     line-height: 60px;
-    padding-left: 388px;
     float: left;
     animation: comming 2s ease 20s;
     -webkit-animation: comming 2s ease 20s;
@@ -97,20 +97,21 @@ main {
 }
 .header__menu{
     float: left;
-    padding-left: 430px;
+
 
 }
 .header__menu-item{
     float: left;
     line-height: 60px;
     margin-right: 40px;
-    font-size: 17px;
+    font-size: 14px;
     text-transform: uppercase;
     animation-delay: 20s;
     animation: topshift .4s ease forwards;
     -webkit-animation: topshift .4s ease forwards;
     -o-animation: topshift .4s ease forwards;
     opacity: 0;
+
 
 }
 .header__menu-item:nth-child(2){
@@ -134,6 +135,10 @@ main {
     transition: all 0.5s;
     display: inline-block;
     transform: scale(1);
+    text-decoration: none;
+}
+nav a{
+    text-decoration: none;
 }
 .header__menu-item a:visited {
     color: #fff;
@@ -163,9 +168,9 @@ main {
 }
 .greetings__info{
     float: left;
-    margin: 432px 0 0 404px;
     text-align: center;
     opacity: 0;
+    width: 100%;
     animation: tittlemove 1s ease forwards;
     -webkit-animation: tittlemove 1s ease forwards;
     -o-animation: tittlemove 1s ease forwards;
@@ -178,16 +183,15 @@ main {
 @keyframes tittlemove {
     from {
         opacity: 0;
-        margin-left: -500px;
     }
     to {
         opacity: 1;
-        margin-left: 404px;
+
     }
 
 }
 .greetings__info h1 {
-    font-size: 83px;
+    font-size: 59px;
     font-weight: bold;
     color: #2C384A;
 }
@@ -216,6 +220,27 @@ main {
 }
 .greetings__info-input:active {
     transform: scale(1.2);
+}
+@media (max-width: 991px) {
+    .greetings__info h1,.greetings__info h4,.greetings__info-input{
+        color: #fff;
+        position:relative;
+        z-index: 3;
+
+    }
+    .greetings{
+        position:relative;
+    }
+    .greetings::after{
+        content: "";
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        background: rgba(0,0,0,0.4);
+        position:absolute;
+        z-index: 1;
+    }
 }
 .myinfo {
     margin-top: 101px;
