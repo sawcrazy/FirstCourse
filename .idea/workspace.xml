@@ -36,7 +36,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Раздел 8 - Bootstrap/Код из работы над ошибками" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -74,7 +74,9 @@
       <workItem from="1662009485369" duration="5711000" />
       <workItem from="1662095920776" duration="609000" />
       <workItem from="1662377501716" duration="594000" />
-      <workItem from="1662447698954" duration="7491000" />
+      <workItem from="1662447698954" duration="8770000" />
+      <workItem from="1662461068394" duration="7533000" />
+      <workItem from="1662528008091" duration="13063000" />
     </task>
     <servers />
   </component>

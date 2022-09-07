@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -33,7 +34,6 @@
                                 <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                                     Меню
                                 </a>
-
                                 <ul class="dropdown-menu">
                                     <li class="dropdown-item"> <a href="#" >Обо мне</a></li>
                                     <li class="dropdown-item"> <a href="#" >Услуги</a></li>
@@ -46,12 +46,9 @@
                         </div>
                     </div>
                 </div>
-
-
-
             </nav>
         </header>
-        <main class="main">
+        <main>
             <section class="greetings">
                 <div class="container h-100">
                     <div class="row align-items-center h-100">
@@ -65,174 +62,267 @@
                         </div>
                     </div>
                 </div>
-
             </section>
+
         <section class="myinfo">
-            <div class="titel">
-                <h2>ОБО МНЕ</h2>
-                <img src="imgs/trait.svg">
-            </div>
-            <img class="myinfo__avatar"src="imgs/avatarMini.png">
-            <div class="myinfo__text">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci fuga magnam quam repellat repellendus! Aliquam fugiat ratione voluptatem. Natus, similique.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci fuga magnam quam repellat repellendus! Aliquam fugiat ratione voluptatem. Natus, similique.</p>
-                <div class="myinfo__input">
-                    <input type="submit" value="Скачать резюме">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-sm-6 col-md-4 text-center">
+                        <div class="titel">
+                            <h2>ОБО МНЕ</h2>
+                            <img src="imgs/trait.svg">
+                        </div>
+                    </div>
+                </div>
+                <img class="myinfo__avatar d-block mx-auto"src="imgs/avatarMini.png">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-sm-11 col-md-9 col-lg-8 text-center text-md-start">
+                        <div class="myinfo__text">
+                            <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci fuga magnam quam repellat repellendus! Aliquam fugiat ratione voluptatem. Natus, similique.</p>
+                            <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci fuga magnam quam repellat repellendus! Aliquam fugiat ratione voluptatem. Natus, similique.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-6 col-sm-5 col-md-4 col-lg-2 text-center">
+                        <div class="myinfo__input">
+                            <input type="submit" value="Скачать резюме">
+                        </div>
+                    </div>
                 </div>
 
             </div>
         </section>
         <section class="skills">
-            <div class="titel">
-                <h2>Что я умею</h2>
-                <img src="imgs/trait.svg">
-            </div>
-            <div class="skills__content">
-                <div class="skills__content-info">
-                    <img src="imgs/laptop.svg">
-                    <h4>Веб-дизайн</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, ut!</p>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-sm-6 col-md-5 text-center">
+                        <div class="titel">
+                            <h2>Что я умею</h2>
+                            <img src="imgs/trait.svg">
+                        </div>
+                    </div>
                 </div>
-                <div class="skills__content-info">
-                    <img src="imgs/develop.svg">
-                    <h4>Разработка</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, ut!</p>
+                <div class=" skills__content row justify-content-center text-center">
+                    <div class="skills__content-info col-12 col-sm-6 col-md-3">
+                        <img src="imgs/laptop.svg">
+                        <h4>Веб-дизайн</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, ut!</p>
+                    </div>
+                    <div class="skills__content-info col-12 col-sm-6 col-md-3">
+                        <img src="imgs/develop.svg">
+                        <h4>Разработка</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, ut!</p>
+                    </div>
+                    <div class="skills__content-info col-12 col-sm-6 col-md-3">
+                        <img src="imgs/rocket.svg">
+                        <h4>СЕО-Оптимизация</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, ut!</p>
+                    </div>
+                    <div class="skills__content-info col-12 col-sm-6 col-md-3">
+                        <img src="imgs/megaphone.svg">
+                        <h4>Маркетинг</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, ut!</p>
+                    </div>
                 </div>
-                <div class="skills__content-info">
-                    <img src="imgs/rocket.svg">
-                    <h4>СЕО-Оптимизация</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, ut!</p>
                 </div>
-                <div class="skills__content-info">
-                    <img src="imgs/megaphone.svg">
-                    <h4>Маркетинг</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, ut!</p>
-                </div>
-            </div>
         </section>
         <section class="cases">
-            <div class="titel">
-                <h2>Кейсы</h2>
-                <img src="imgs/trait.svg">
-            </div>
-            <div class="cases__text">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem doloremque expedita facere harum hic ipsam mollitia natus quam quos unde.</p>
-            </div>
-            <div class="cases__slider">
-                <img src="imgs/cases.png">
-                <div class="cases__slider-content">
-                    <div class="cases__slider-text">
-                        <h3>CLIENT:</h3>
-                        <p>Какая-то компания</p>
-                        <h3>WEBSITE:</h3>
-                        <p><a href="http://www.somedomain.com">http://www.somedomain.com</a> </p>
-                        <button class="cases__btn">VISIT LIVE SITE</button>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-sm-6 col-md-5 text-center">
+                            <div class="titel">
+                                <h2>Кейсы</h2>
+                                <img src="imgs/trait.svg">
+                            </div>
+                        </div>
                     </div>
-                    <div class="cases__slider-info">
-                        <h4>Название проекта</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit., sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <div class="cases__text container text-center">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem doloremque expedita facere harum hic ipsam mollitia natus quam quos unde.</p>
                     </div>
-                 </div>
+                    <div class="container">
+                        <div class="cases__slider">
+                            <div class="row">
+                                <div class="col-12 text-center ">
+                                    <img src="imgs/cases.png">
+                                </div>
+                            <div class="cases__slider-content">
+                                <div class="cases__slider-text">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <h3>CLIENT:</h3>
+                                            <p>Какая-то компания</p>
+                                            <h3>WEBSITE:</h3>
+                                            <p><a href="http://www.somedomain.com">http://www.somedomain.com</a> </p>
+                                            <button class="cases__btn">VISIT LIVE SITE</button>
+                                        </div>
+                                        <div class="col-12 col-md-7 offset-md-2 col-lg-8 offset-lg-1">
+                                            <div class="cases__slider-info">
+                                                <h4>Название проекта</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit., sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        </div>
+                    </div>
+
             </div>
         </section>
-        <section class="price">
-            <h2>Расчет стоимости</h2>
+        <section class="price container">
+            <h2 class="text-center">Расчет стоимости</h2>
             <div class="price__content">
-                <h3>ТИП САЙТА</h3>
-                <select >
-                    <option value="">Выберите пункт...</option>
-                    <option value="сайт визитка">сайт визитка</option>
-                    <option value="карпоративный сайт">карпоративный сайт</option>
-                    <option value="блог">блог</option>
-                </select>
-                <h3>ДИЗАЙН</h3>
-                <select >
-                    <option value="">Выберите пункт...</option>
-                    <option value="сайт визитка">сайт визитка</option>
-                    <option value="карпоративный сайт">карпоративный сайт</option>
-                    <option value="блог">блог</option>
-                </select>
-                <h3>АДАПТИВНОСТЬ</h3>
-                <select >
-                    <option value="">Выберите пункт...</option>
-                    <option value="сайт визитка">сайт визитка</option>
-                    <option value="карпоративный сайт">карпоративный сайт</option>
-                    <option value="блог">блог</option>
-                </select>
-                <hr>
-            </div>
+                <div class="row justify-content-center">
+                    <div class="col-10">
+                        <h3>ТИП САЙТА</h3>
+                        <select class="w-100">
+                            <option value="">Выберите пункт...</option>
+                            <option value="сайт визитка">сайт визитка</option>
+                            <option value="карпоративный сайт">карпоративный сайт</option>
+                            <option value="блог">блог</option>
+                        </select>
+                    </div>
+                    <div class="col-10">
+                        <h3>ДИЗАЙН</h3>
+                        <select class="w-100">
+                            <option value="">Выберите пункт...</option>
+                            <option value="сайт визитка">сайт визитка</option>
+                            <option value="карпоративный сайт">карпоративный сайт</option>
+                            <option value="блог">блог</option>
+                        </select>
+                    </div>
+                    <div class="col-10">
+                        <h3>АДАПТИВНОСТЬ</h3>
+                        <select class="w-100">
+                            <option value="">Выберите пункт...</option>
+                            <option value="сайт визитка">сайт визитка</option>
+                            <option value="карпоративный сайт">карпоративный сайт</option>
+                            <option value="блог">блог</option>
+                        </select>
+                    </div>
+                    <hr>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        <div class="price__total">
+                            <div class="price__total-text">
+                                <p>Сроки</p>
+                                <p class="price__total-p">Стоимость</p>
+                            </div>
+                            </div>
+                    </div>
+                    <div class="col-1 offset-8">
+                        <div class="price__total-value">
+                            <p>0</p>
+                            <p>0</p>
+                        </div>
+                    </div>
+                    </div>
+                <div class="row justify-content-center">
+                    <div class="col-6 col-sm-5 col-md-3 col-lg-3">
+                        <button class="cases__btn">Отправить заявку</button>
+                    </div>
+                </div>
 
-            <div class="price__total">
-                <div class="price__total-text">
-                    <p>Сроки</p>
-                    <p class="price__total-p">Стоимость</p>
-                </div>
-                <div class="price__total-value">
-                    <p>0</p>
-                    <p>0</p>
-                </div>
-            </div>
+                    </div>
         </section>
         <section class="statistics">
-            <div class="titel">
-                <h2>НЕМНОГО СТАТИСТИКИ</h2>
-                <img src="imgs/trait.svg">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-sm-6 col-md-6 text-center">
+                        <div class="titel">
+                            <h2>НЕМНОГО СТАТИСТИКИ</h2>
+                            <img src="imgs/trait.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="statistics__content row justify-content-center text-center">
+                    <div class="statistics__content-info col-12 col-sm-6 col-md-3">
+                        <img src="imgs/smile.svg">
+                        <h4>120</h4>
+                        <p>СЧАСТЛИВЫХ КЛИЕНТОВ</p>
+                    </div>
+                    <div class="statistics__content-info col-12 col-sm-6 col-md-3">
+                        <img src="imgs/programming.svg">
+                        <h4>4600</h4>
+                        <p>ЧАСОВ РАБОТЫ</p>
+                    </div>
+                    <div class="statistics__content-info col-12 col-sm-6 col-md-3">
+                        <img src="imgs/tick.svg">
+                        <h4>340</h4>
+                        <p>ПРОЕКТОВ ЗАВЕРШЕНО</p>
+                    </div>
+                    <div class="statistics__content-info col-12 col-sm-6 col-md-3">
+                        <img src="imgs/kubok.svg">
+                        <h4>23</h4>
+                        <p>НАГРАД ПОЛУЧЕНО</p>
+                    </div>
+                </div>
+
             </div>
-            <div class="statistics__content">
-                <div class="statistics__content-info">
-                    <img src="imgs/smile.svg">
-                    <h4>120</h4>
-                    <p>СЧАСТЛИВЫХ КЛИЕНТОВ</p>
-                </div>
-                <div class="statistics__content-info">
-                    <img src="imgs/programming.svg">
-                    <h4>4600</h4>
-                    <p>ЧАСОВ РАБОТЫ</p>
-                </div>
-                <div class="statistics__content-info">
-                    <img src="imgs/tick.svg">
-                    <h4>340</h4>
-                    <p>ПРОЕКТОВ ЗАВЕРШЕНО</p>
-                </div>
-                <div class="statistics__content-info">
-                    <img src="imgs/kubok.svg">
-                    <h4>23</h4>
-                    <p>НАГРАД ПОЛУЧЕНО</p>
-                </div>
-            </div>
+
         </section>
-        <section class="reviews">
-            <div class="titel">
-                <h2>ОТЗЫВЫ</h2>
-                <img src="imgs/trait.svg">
+        <section class="reviews container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-6 col-md-6 text-center">
+                    <div class="titel">
+                        <h2>Отзывы</h2>
+                        <img src="imgs/trait.svg">
+                    </div>
+                </div>
             </div>
             <div class="reviews__slider">
-                <img src="imgs/fotorew.png">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at duis sed dapidus leo nec ornare diam. </p>
-                    <p> <strong>Михайил</strong>, Ген директор ПАО “Газпром”.</p>
-                    <img src="imgs/points.svg">
+                <div class="row justify-content-center text-center">
+                    <div class="col-12">
+                        <img src="imgs/fotorew.png">
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-10 col-xxl-10">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at duis sed dapidus leo nec ornare diam. </p>
+                    </div>
+                    <div class="col-12">
+                        <p> <strong>Михайил</strong>, Ген директор ПАО “Газпром”.</p>
+                    </div>
+                    <div class="col-12">
+                        <img src="imgs/points.svg">
+                    </div>
+                </div>
             </div>
         </section>
 
         <footer class="footer">
-            <div class="titel">
-                <h2>МОИ КОНТАКТЫ</h2>
-                <img src="imgs/trait.svg">
-            </div>
+            <div class="container">
+
+                <div class="row justify-content-center">
+                    <div class="col-12 col-sm-6 col-md-6 text-center">
+                        <div class="titel">
+                            <h2>Мои контакты</h2>
+                            <img src="imgs/trait.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center text-center">
+                    <div class="col-8">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leo nec ornare diamcoccodo </p>
+                    </div>
+                </div>
             <div class="footer__contacts">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leo nec ornare diamcoccodo </p>
-                <div class="footer__contacts-content">
-                    <div class="footer__contacts-info">
+                <div class="footer__contacts-content row justify-content-center text-center">
+                    <div class="footer__contacts-info col-12 col-sm-6 col-md-3">
                         <img src="imgs/locate.svg">
                         <br>
                         <a href="#">Санкт-Петербур Невский проспект 11</a>
                     </div>
-                    <div class="footer__contacts-info">
+                    <div class="footer__contacts-info col-12 col-sm-6 col-md-3">
                         <img src="imgs/mail.svg">
                         <br>
                         <a href="info@companyname.com" type="email">info@companyname.com</a>
                     </div>
-                    <div class="footer__contacts-info">
+                    <div class="footer__contacts-info col-12 col-sm-6 col-md-3">
                         <img src="imgs/phone.svg" type="phone">
                         <br>
                         <a href="#">+7 999 999-99-99</a>
@@ -240,36 +330,50 @@
                 </div>
 
                 <div class="footer__message">
-                    <h3>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h3>
+                    <h3 class="text-center">ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h3>
                     <form>
-                        <div class="footer__message-name">
-                            <label for="name"></label>
-                            <input type="text" id="name" placeholder="Имя ">
-                        </div>
-                        <div class="footer__message-email">
-                            <label for="email"></label>
-                            <input type="email" id="email" placeholder="Email ">
-                        </div>
-                        <div class="footer__message-text">
-                            <label for="massenge"></label>
-                            <br>
-                            <textarea  id="massenge" placeholder="Собщение"></textarea>
-                        </div>
-                        <div class="footer__message-btn">
-                            <button type="submit">
-                                Отправить
-                            </button>
+                        <div class="row justify-content-center">
+                            <div class="col-5">
+                                <div class="footer__message-name">
+                                    <label for="name"></label>
+                                    <input type="text" id="name" placeholder="Имя ">
+                                </div>
+                            </div>
+                            <div class="col-5">
+                                <div class="footer__message-email">
+                                    <label for="email"></label>
+                                    <input type="email" id="email" placeholder="Email ">
+                                </div>
+                            </div>
+                            <div class="col-10">
+                                <div class="footer__message-text">
+                                    <label for="massenge"></label>
+                                    <br>
+                                    <textarea  id="massenge" placeholder="Собщение"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-3 text-center">
+                                <div class="footer__message-btn">
+                                    <button type="submit">
+                                        Отправить
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </form>
                 </div>
             </div>
-            <div class="footer__social">
-                <a href="#"><img src="imgs/fb.png" alt=""></a>
-                <a href="#"><img src="imgs/tvit.png" alt=""></a>
-                <a href="#"><img src="imgs/bool.png" alt=""></a>
-                <a href="#"><img src="imgs/kat.png" alt=""></a>
-                <a href="#"><img src="imgs/inst.png" alt=""></a>
-                <a href="#"><img src="imgs/in.png" alt=""></a>
+            <div class="footer__social row justify-content-center text-center">
+                <div class="col-12">
+                    <a href="#"><img src="imgs/fb.png" alt=""></a>
+                    <a href="#"><img src="imgs/tvit.png" alt=""></a>
+                    <a href="#"><img src="imgs/bool.png" alt=""></a>
+                    <a href="#"><img src="imgs/kat.png" alt=""></a>
+                    <a href="#"><img src="imgs/inst.png" alt=""></a>
+                    <a href="#"><img src="imgs/in.png" alt=""></a>
+                </div>
+
+            </div>
             </div>
             <div class="footer__map">
                 <img src="imgs/map.png">
