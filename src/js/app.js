@@ -1,4 +1,5 @@
 $(document).ready(function (){
+    $(".preloader").css("display", "none");
    let valSite;
     $('#site').change(function (){
         valSite = $(this).val();
