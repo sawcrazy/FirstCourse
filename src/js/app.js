@@ -1,51 +1,90 @@
+$(document).ready(function (){
+   let valSite;
+    $('#site').change(function (){
+        valSite = $(this).val();
+        console.log(valSite)
+        return valSite
+    });
+    let valDesing;
+    $('#desing').change(function (){
+        valDesing = $(this).val();
+        return valDesing
+    });
+    let valAdaptability;
+    $('#adaptability').change(function (){
+       valAdaptability = $(this).val();
+        return valAdaptability
+    });
+    function sum (){
+        const sum = +valSite + +valDesing + +valAdaptability
+        console.log(sum)
+        return sum
+    }
+    $('#price__total').click(()=>{
+        $('#terms').text(getDays());
+        $('#cost').text(getSumma());
+    })
 
-const sitePrice ={
-    1:5000,
-    2:10000,
-    3:15000,
-}
-const desingPrice ={
-    1:5000,
-    2:10000,
-    3:15000,
-}
-const adaptabilityPrice ={
-    1:5000,
-    2:10000,
-    3:15000,
-}
-const siteDays ={
-    1:2,
-    2:2,
-    3:2,
-}
-const desingDays ={
-    1:2,
-    2:3,
-    3:4,
-}
-const adaptabilityDays ={
-    1:1,
-    2:3,
-    3:5,
-}
-
-function getSummaDays() {
-    let site = prompt('Выберете тип сайта. Нужно поставить цифру от 1 до 3, где 1 - Сайт-визитка; 2 - Корпоративный сайт; 3 - Интернет-магазин.');
-    let desing = prompt('Выберете дизайн. Нужно поставить цифру от 1 до 3, где 1 - Шаблонный; 2 - Уникальный; 3 - WOW-Дизайн.');
-    let adaptability = prompt('Выберете адаптивность. Нужно поставить цифру от 1 до 3, где 1 - Только ПК; 2 - Только мобильный сайт; 3 - ПК + Мобильный.');
-    if(site in sitePrice && desing in desingPrice && adaptability in adaptabilityPrice) {
-        const sum = sitePrice[site] + desingPrice[desing] + adaptabilityPrice[adaptability]
-        const days = siteDays[site] + desingDays[desing] + adaptabilityDays[adaptability]
-        const textPriceDays = `Сумма вашего заказа = ${sum} рублей. Выполнение заказа займет  ${days} дней`
-        return alert(textPriceDays)
-    }else {
-        const textError = 'Неверный ввод данных'
-        alert(textError)
-        getSummaDays()
+    const sitePrice ={
+        1:5000,
+        2:10000,
+        3:15000,
+    }
+    const desingPrice ={
+        1:5000,
+        2:10000,
+        3:15000,
+    }
+    const adaptabilityPrice ={
+        1:5000,
+        2:10000,
+        3:15000,
+    }
+    const siteDays ={
+        1:2,
+        2:2,
+        3:2,
+    }
+    const desingDays ={
+        1:2,
+        2:3,
+        3:4,
+    }
+    const adaptabilityDays ={
+        1:1,
+        2:3,
+        3:5,
     }
 
-}
-getSummaDays()
+    function getSumma(){
+        if(+valSite in sitePrice && valDesing in desingPrice && +valAdaptability in adaptabilityPrice){
+            const sum = sitePrice[+valSite] + desingPrice[+valDesing] + adaptabilityPrice[+valAdaptability]
+            return sum
+        }
+        return
+    }
+    function getDays(){
+        if(+valSite in siteDays && valDesing in desingDays && +valAdaptability in adaptabilityDays){
+            const days = siteDays[+valSite] + desingDays[+valDesing] + adaptabilityDays[+valAdaptability]
+            return days
+        }
+        return
+
+
+    }
+
+    $('a[href^="#"]').click(function (){
+        let valHref = $(this).attr("href");
+        $('html, body').animate({scrollTop: $(valHref).offset().top - 62 + "px"})
+    });
+    $(window).scroll(() => {
+        let scrollDistance = $(window).scrollTop();
+        console.log(scrollDistance)
+        $(".section")
+    })
+
+})
+
+
 
 

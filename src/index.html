@@ -20,12 +20,12 @@
                         <div class=" px-0 col-6 col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl-2 offset-lg-1 d-none d-lg-block">
                             <div class="header__menu">
                                 <ul class="header__menu-list">
-                                    <li class="header__menu-item"> <a href="#" >Обо мне</a></li>
-                                    <li class="header__menu-item"> <a href="#" >Услуги</a></li>
-                                    <li class="header__menu-item"> <a href="#" >Кейсы</a></li>
-                                    <li class="header__menu-item"> <a href="#" >Прайс</a></li>
-                                    <li class="header__menu-item"> <a href="#" >Отзывы</a></li>
-                                    <li class="header__menu-item"> <a href="#" >Контакты</a></li>
+                                    <li class="header__menu-item"> <a href="#myinfo" >Обо мне</a></li>
+                                    <li class="header__menu-item"> <a href="#skills" >Услуги</a></li>
+                                    <li class="header__menu-item"> <a href="#cases" >Кейсы</a></li>
+                                    <li class="header__menu-item"> <a href="#price" >Прайс</a></li>
+                                    <li class="header__menu-item"> <a href="#reviews" >Отзывы</a></li>
+                                    <li class="header__menu-item"> <a href="#footer" >Контакты</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -35,12 +35,12 @@
                                     Меню
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li class="dropdown-item"> <a href="#" >Обо мне</a></li>
-                                    <li class="dropdown-item"> <a href="#" >Услуги</a></li>
-                                    <li class="dropdown-item"> <a href="#" >Кейсы</a></li>
-                                    <li class="dropdown-item"> <a href="#" >Прайс</a></li>
-                                    <li class="dropdown-item"> <a href="#" >Отзывы</a></li>
-                                    <li class="dropdown-item"> <a href="#" >Контакты</a></li>
+                                    <li class="dropdown-item"> <a href="#myinfo" >Обо мне</a></li>
+                                    <li class="dropdown-item"> <a href="#skills" >Услуги</a></li>
+                                    <li class="dropdown-item"> <a href="#cases" >Кейсы</a></li>
+                                    <li class="dropdown-item"> <a href="#price" >Прайс</a></li>
+                                    <li class="dropdown-item"> <a href="#reviews" >Отзывы</a></li>
+                                    <li class="dropdown-item"> <a href="#footer" >Контакты</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -64,7 +64,7 @@
                 </div>
             </section>
 
-        <section class="myinfo">
+        <section class="myinfo" id="myinfo">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12 col-sm-6 col-md-4 text-center">
@@ -93,7 +93,7 @@
 
             </div>
         </section>
-        <section class="skills">
+        <section class="skills" id="skills">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12 col-sm-6 col-md-5 text-center">
@@ -127,7 +127,7 @@
                 </div>
                 </div>
         </section>
-        <section class="cases">
+        <section class="cases" id="cases">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-12 col-sm-6 col-md-5 text-center">
@@ -144,65 +144,123 @@
                         <div class="cases__slider">
                             <div class="row">
                                 <div class="col-12 text-center ">
-                                    <img src="imgs/cases.png">
-                                </div>
-                            <div class="cases__slider-content">
-                                <div class="cases__slider-text">
-                                    <div class="row">
-                                        <div class="col-3">
-                                            <h3>CLIENT:</h3>
-                                            <p>Какая-то компания</p>
-                                            <h3>WEBSITE:</h3>
-                                            <p><a href="http://www.somedomain.com">http://www.somedomain.com</a> </p>
-                                            <button class="cases__btn">VISIT LIVE SITE</button>
-                                        </div>
-                                        <div class="col-12 col-md-7 offset-md-2 col-lg-8 offset-lg-1">
-                                            <div class="cases__slider-info">
-                                                <h4>Название проекта</h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit., sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="imgs/cases.png" class="d-block w-100" alt="lorem">
+                                                <div class="cases__slider-content">
+                                                    <div class="cases__slider-text">
+                                                        <div class="row">
+                                                            <div class="col-3">
+                                                                <h3>CLIENT:</h3>
+                                                                <p>Какая-то компания</p>
+                                                                <h3>WEBSITE:</h3>
+                                                                <p><a href="http://www.somedomain.com">http://www.somedomain.com</a> </p>
+                                                                <button class="cases__btn">VISIT LIVE SITE</button>
+                                                            </div>
+                                                            <div class="col-12 col-md-7 offset-md-2 col-lg-8 offset-lg-1">
+                                                                <div class="cases__slider-info">
+                                                                    <h4>Название проекта</h4>
+                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit., sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="imgs/cases.png" class="d-block w-100" alt="lorem">
+                                                <div class="cases__slider-content">
+                                                    <div class="cases__slider-text">
+                                                        <div class="row">
+                                                            <div class="col-3">
+                                                                <h3>CLIENT:</h3>
+                                                                <p>Какая-то компания</p>
+                                                                <h3>WEBSITE:</h3>
+                                                                <p><a href="http://www.somedomain.com">http://www.somedomain.com</a> </p>
+                                                                <button class="cases__btn">VISIT LIVE SITE</button>
+                                                            </div>
+                                                            <div class="col-12 col-md-7 offset-md-2 col-lg-8 offset-lg-1">
+                                                                <div class="cases__slider-info">
+                                                                    <h4>Название проекта</h4>
+                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit., sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="imgs/cases.png" class="d-block w-100" alt="lorem">
+                                                <div class="cases__slider-content">
+                                                    <div class="cases__slider-text">
+                                                        <div class="row">
+                                                            <div class="col-3">
+                                                                <h3>CLIENT:</h3>
+                                                                <p>Какая-то компания</p>
+                                                                <h3>WEBSITE:</h3>
+                                                                <p><a href="http://www.somedomain.com">http://www.somedomain.com</a> </p>
+                                                                <button class="cases__btn">VISIT LIVE SITE</button>
+                                                            </div>
+                                                            <div class="col-12 col-md-7 offset-md-2 col-lg-8 offset-lg-1">
+                                                                <div class="cases__slider-info">
+                                                                    <h4>Название проекта</h4>
+                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit., sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
+                                        <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon no" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Предыдущий</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="next">
+                                            <span class="carousel-control-next-icon no" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Следующий</span>
+                                        </button>
                                     </div>
-
                                 </div>
-
-                            </div>
-                        </div>
-
                         </div>
                     </div>
+                 </div>
 
             </div>
         </section>
-        <section class="price container">
+        <section class="price container" id="price">
             <h2 class="text-center">Расчет стоимости</h2>
             <div class="price__content">
                 <div class="row justify-content-center">
                     <div class="col-10">
                         <h3>ТИП САЙТА</h3>
-                        <select class="w-100">
-                            <option value="">Выберите пункт...</option>
-                            <option value="сайт визитка">Сайт-визитка</option>
-                            <option value="карпоративный сайт">Корпоративный сайт</option>
-                            <option value="блог">Интернет-магазин</option>
+                        <select class="w-100" id="site">
+                            <option value="0">Выберите пункт...</option>
+                            <option value="1">Сайт-визитка</option>
+                            <option value="2">Корпоративный сайт</option>
+                            <option value="3">Интернет-магазин</option>
                         </select>
                     </div>
                     <div class="col-10">
                         <h3>ДИЗАЙН</h3>
-                        <select class="w-100">
-                            <option value="">Выберите пункт...</option>
-                            <option value="сайт визитка">Шаблонный</option>
-                            <option value="карпоративный сайт">Уникальный</option>
-                            <option value="блог">WOW-Дизайн</option>
+                        <select class="w-100" id="desing">
+                            <option value="0">Выберите пункт...</option>
+                            <option value="1">Шаблонный</option>
+                            <option value="2">Уникальный</option>
+                            <option value="3">WOW-Дизайн</option>
                         </select>
                     </div>
                     <div class="col-10">
                         <h3>АДАПТИВНОСТЬ</h3>
-                        <select class="w-100">
-                            <option value="">Выберите пункт...</option>
-                            <option value="сайт визитка">Только ПК</option>
-                            <option value="карпоративный сайт">Только мобильный сайт</option>
-                            <option value="блог">ПК + Мобильный</option>
+                        <select class="w-100" id="adaptability">
+                            <option value="0">Выберите пункт...</option>
+                            <option value="1">Только ПК</option>
+                            <option value="2">Только мобильный сайт</option>
+                            <option value="3">ПК + Мобильный</option>
                         </select>
                     </div>
                     <hr>
@@ -211,7 +269,7 @@
                     <div class="col-10">
                         <div class="row justify-content-center">
                             <div class="col-3">
-                                <div class="price__total">
+                                <div class="price__total" id="price__total">
                                     <div class="price__total-text">
                                         <p>Сроки</p>
                                         <p class="price__total-p">Стоимость</p>
@@ -220,8 +278,8 @@
                             </div>
                             <div class="col-1 offset-8">
                                 <div class="price__total-value text-end">
-                                    <p>0</p>
-                                    <p>0</p>
+                                    <p id="terms">0</p>
+                                    <p id="cost">0</p>
                                 </div>
                             </div>
                         </div>
@@ -237,7 +295,7 @@
 
                     </div>
         </section>
-        <section class="statistics">
+        <section class="statistics" id="statistics">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12 col-sm-6 col-md-6 text-center">
@@ -273,34 +331,73 @@
             </div>
 
         </section>
-        <section class="reviews container">
-            <div class="row justify-content-center">
-                <div class="col-12 col-sm-6 col-md-6 text-center">
-                    <div class="titel">
-                        <h2>Отзывы</h2>
-                        <img src="imgs/trait.svg">
+            <section class="reviews container" id="reviews">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-sm-6 col-md-6 text-center">
+                        <div class="titel">
+                            <h2>Отзывы</h2>
+                            <img src="imgs/trait.svg">
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="reviews__slider">
-                <div class="row justify-content-center text-center">
-                    <div class="col-12">
-                        <img src="imgs/fotorew.png">
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-10 col-xxl-10">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at duis sed dapidus leo nec ornare diam. </p>
-                    </div>
-                    <div class="col-12">
-                        <p> <strong>Михайил</strong>, Ген директор ПАО “Газпром”.</p>
-                    </div>
-                    <div class="col-12">
-                        <img src="imgs/points.svg">
-                    </div>
-                </div>
-            </div>
-        </section>
+                <div class="reviews__slider ">
+                    <div class="row justify-content-center text-center container">
+                        <div class="col-12">
+                            <div id="carouselExampleControls1" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="imgs/fotorew.png" class="w-10" alt="...">
+                                        <div class="col-12">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at duis sed dapidus leo nec ornare diam. </p>
+                                        </div>
+                                        <div class="col-12">
+                                            <p> <strong>Михайил</strong>, Ген директор ПАО “Газпром”.</p>
+                                        </div>
+                                        <div class="col-12">
+                                            <img src="imgs/points.svg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="imgs/fotorew.png" class="w-10" alt="...">
+                                        <div class="col-12">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at duis sed dapidus leo nec ornare diam. </p>
+                                        </div>
+                                        <div class="col-12">
+                                            <p> <strong>Михайил</strong>, Ген директор ПАО “Газпром”.</p>
+                                        </div>
+                                        <div class="col-12">
+                                            <img src="imgs/points.svg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="imgs/fotorew.png" class="w-10" alt="...">
+                                        <div class="col-12 text-center">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at duis sed dapidus leo nec ornare diam. </p>
+                                        </div>
+                                        <div class="col-12">
+                                            <p> <strong>Михайил</strong>, Ген директор ПАО “Газпром”.</p>
+                                        </div>
+                                        <div class="col-12">
+                                            <img src="imgs/points.svg">
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1"  data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Предыдущий</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1"  data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Следующий</span>
+                                </button>
+                            </div>
+                        </div>
 
-        <footer class="footer">
+                    </div>
+                </div>
+            </section>
+
+        <footer class="footer" id="footer">
             <div class="container">
 
                 <div class="row justify-content-center">
@@ -390,8 +487,8 @@
         </footer>
     </main>
         <script src="js/jquery-3.6.1.min.js"></script>
-        <script src="js/app.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/app.js"></script>
 
 </body>
 </html>

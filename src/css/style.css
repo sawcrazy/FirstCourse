@@ -291,6 +291,7 @@ nav a{
     background: url(../imgs/downloadI.svg) 02% 50%/auto 50% no-repeat;
     padding: 0 5px 0 20px;
     color: #6F707E;
+    margin-bottom: 100px;
 }
 .myinfo__input input:hover{
     color: red;
@@ -302,7 +303,7 @@ nav a{
 
 .skills{
     background: url(../imgs/bg_skills.jpg) center/cover fixed no-repeat;
-    margin-top: 100px;
+    /*margin-top: 100px;*/
     padding-top: 100px;
 }
 .skills__content {
@@ -534,9 +535,7 @@ nav a{
     margin-top: 22px;
     margin-bottom: 75px;
 }
-.reviews__slider img:hover{
-    transform: rotate(180deg);
-}
+
 .footer {
     padding-top: 100px;
     background: url(../imgs/bg_footer.jpg) center/cover no-repeat;
@@ -649,6 +648,9 @@ nav a{
     font-size: 13px;
     font-family: 'ArialMT',sans-serif;
     color: #fff;
+}
+.no{
+    opacity: 0;
 }
 
 
