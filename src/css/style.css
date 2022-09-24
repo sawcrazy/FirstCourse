@@ -6,70 +6,6 @@ main {
     height: 100%;
 }
 
-
-.loader {
-    border: 16px solid #f3f3f3;
-    border-top: 16px solid #3498db;
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    animation: spin 2s linear infinite;
-    margin: 0 auto;
-
-}
-@keyframes spin {
-    from {
-        transform: rotate(0deg);
-
-    }
-    to {
-        transform: rotate(360deg);
-            }
-}
-.loderoff{
-    margin-top: 150px;
-    position: static;
-    text-align: center;
-    animation: change 8s ease forwards;
-}
-.loderoff h1{
-    margin-bottom: 50px;
-    font-weight: bold;
-    font-size: 30px;
-    color: #63B5AE;
-}
-.loaderon{
-    margin: 20px auto;
-    text-align: center;
-    color: darkgreen;
-    font-size: 30px;
-    animation:change 2s reverse backwards;
-    animation-delay: 6s;
-}
-.loaderon h2{
-    margin-bottom: 20px;
-}
-.loaderon a {
-    color: darkgreen;
-    font-size: 30px;
-
-}
-.loaderon a:hover{
-    color: orangered;
-}
-
-@keyframes change {
-    0%{
-        opacity: 1;
-    }
-    50%{
-        opacity: .5;
-    }
-    100%{
-        opacity: 0;
-    }
-}
-
 .header__nav{
     width: 100%;
     height: 60px;
@@ -97,8 +33,6 @@ main {
 }
 .header__menu{
     float: left;
-
-
 }
 .header__menu-item{
     float: left;
@@ -139,6 +73,11 @@ main {
 }
 nav a{
     text-decoration: none;
+}
+.header__menu li a.active{
+    color: #CF7600;
+    transform: scale(1.2);
+
 }
 .header__menu-item a:visited {
     color: #fff;
@@ -325,7 +264,7 @@ nav a{
 .skills__content-info{
     text-align: center;
     width: 216px;
-    animation:skillsmove 2s;
+    /*animation:skillsmove 2s;*/
 
 }
 .skills__content-info:hover{
@@ -364,9 +303,7 @@ nav a{
     width: 100%;
     animation:slidermove 5s;
 }
-.cases__slider-content {
-    animation:slidermove 5s;
-}
+
 .cases__slider-text {
     margin-top: 39px;
     text-align: left;
@@ -375,14 +312,6 @@ nav a{
     color: #384354;
     font-size: 25px;
     font-family: 'Franklin Gothic Medium',sans-serif;
-}
-@keyframes slidermove {
-    from {
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
 }
 .cases__slider-text p {
     margin-top: 8px;
@@ -436,10 +365,6 @@ nav a{
     font-family: 'Franklin Gothic Medium',sans-serif;
     margin-bottom: 65px;
 }
-.price__content {
-
-
-}
 .price__content h3 {
     text-align: left;
     margin-top: 36px;
@@ -473,8 +398,7 @@ nav a{
     margin-top: 15px;
     font-size: 30px;
 }
-.price__total-p {
-}
+
 .price__total-value {
     margin-top: 9px;
     color: #1C2534;
@@ -521,8 +445,6 @@ nav a{
 }
 .reviews {
     margin-top: 100px;
-    animation: slidermove 5s;
-    animation-delay: 20s;
 }
 .reviews__slider p {
     color: #243042;
@@ -560,6 +482,10 @@ nav a{
     color: #fff;
     font-size: 17px;
     font-family: 'Calibri',sans-serif;
+    text-decoration: none;
+}
+.footer__contacts-content a:hover{
+    color: #CF7600;
 }
 
 .footer__contacts-content img {
@@ -651,6 +577,8 @@ nav a{
 }
 .no{
     opacity: 0;
+    border: solid ;
 }
+
 
 
