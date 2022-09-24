@@ -201,13 +201,14 @@ nav a{
     font-family: 'Calibri', sans-serif;
     color: #3F495A;
     font-size: 17px;
+
 }
 .myinfo__text p {
     padding-bottom: 40px;
-    animation: myinfomove 5s  ease forwards;
+
 }
-.myinfo__text p:nth-child(2){
-    animation: myinfomove 3s  ease forwards;
+.show-animation_text{
+    animation: myinfomove 5s  ease forwards;
 }
 
 @keyframes myinfomove {
@@ -261,10 +262,13 @@ nav a{
         margin: 0;
     }
 }
+.show-animation{
+    animation:skillsmove 2s;
+}
 .skills__content-info{
     text-align: center;
     width: 216px;
-    /*animation:skillsmove 2s;*/
+
 
 }
 .skills__content-info:hover{
@@ -414,6 +418,9 @@ nav a{
 }
 .statistics__content {
     margin-top: 75px;
+
+}
+.show-animation_stat{
     animation: statisticsmove 5s;
 }
 @keyframes statisticsmove {

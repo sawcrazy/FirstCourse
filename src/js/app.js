@@ -5,7 +5,7 @@ $(document).ready(function (){
         $('.modal').modal('show')
     };
 
-    // setTimeout(startModal,10000);
+    setTimeout(startModal,10000);
 
     function calculate(){
         let sum = parseInt($("#site option:selected").val()) + parseInt($("#desing option:selected").val()) + parseInt($("#adaptability option:selected").val());
@@ -47,31 +47,61 @@ $(document).ready(function (){
             });
         });
     };
-    $(window).scroll(() => {
-        let scrollDistance = $(window).scrollTop();
-        $('.section').each((i, el) => {
-            if ($(el).offset().top - $('nav').outerHeight() <= scrollDistance) {
-                if($('div').hasClass('changenumber')){
-                    changeNumber();
-                };
-                if($('div').hasClass('myinfo__text')){
-                    $('.myinfo__text p').css('animation','myinfomove 5s  ease forwards')
-                }
-                if($('div').hasClass('skills__content')){
-                    $('.skills__content-info').css('animation','skillsmove 2s')
-                };
-                if($('div').hasClass('.statistics__content')){
-                    $('.statistics__content').css('animation','statisticsmove 5s')
-                };
-            };
-        });
-
-    });
 
     $('.image-link').magnificPopup({type:'image'});
 
-});
+    let options = {threshold:[0.01]};
+    let observer = new IntersectionObserver(onEntry,options);
+    let observerStat = new IntersectionObserver(onEntryStat,options);
+    let observerText = new IntersectionObserver(onEntryText,options);
+    let observerImg = new IntersectionObserver(onEntryImg,options);
+    let elements = $('.element-animation');
+    let elementsStat = $('.element-animation');
+    let elementsText = $('.element-animation');
+    let elementsImg = $('.element-animation');
+    elements.each((i,el) =>{
+        observer.observe(el)
+    });
+    elementsStat.each((i,el) =>{
+        observerStat.observe(el)
+    });
+    elementsText.each((i,el) =>{
+        observerText.observe(el)
+    });
+    elementsImg.each((i,el) =>{
+        observerImg.observe(el)
+    });
 
+    function onEntry(entry){
+        entry.forEach(change => {
+            if(change.isIntersecting){
+                change.target.classList.add('show-animation');
+            }
+        })
+    };
+    function onEntryStat(entry){
+        entry.forEach(change => {
+            if(change.isIntersecting){
+                change.target.classList.add('show-animation_stat');
+                changeNumber();
+            }
+        })
+    };
+    function onEntryText(entry){
+        entry.forEach(change => {
+            if(change.isIntersecting){
+                change.target.classList.add('show-animation_text');
+            }
+        })
+    };
+    function onEntryImg(entry){
+        entry.forEach(change => {
+            if(change.isIntersecting){
+                change.target.src = change.target.dataset.scr;
+            }
+        })
+    };
+});
 
 
 
