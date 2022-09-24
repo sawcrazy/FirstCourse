@@ -97,7 +97,7 @@ $(document).ready(function (){
     function onEntryImg(entry){
         entry.forEach(change => {
             if(change.isIntersecting){
-                change.target.src = change.target.dataset.scr;
+                change.target.src = change.target.dataset.src;
             }
         })
     };
