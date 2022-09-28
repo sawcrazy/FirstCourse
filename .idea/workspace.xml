@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ce5e211a-8e36-424c-8b72-93260d424e66" name="Changes" comment="" />
+    <list default="true" id="ce5e211a-8e36-424c-8b72-93260d424e66" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/css/animate.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/wow.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/app.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +18,7 @@
       <list>
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -83,6 +90,8 @@
       <workItem from="1663860016796" duration="10443000" />
       <workItem from="1663949179651" duration="3920000" />
       <workItem from="1664008984620" duration="7848000" />
+      <workItem from="1664053134268" duration="879000" />
+      <workItem from="1664405177454" duration="2031000" />
     </task>
     <servers />
   </component>

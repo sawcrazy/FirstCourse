@@ -5,8 +5,8 @@ $(document).ready(function (){
         $('.modal').modal('show')
     };
 
-    setTimeout(startModal,10000);
-
+    // setTimeout(startModal,10000);
+    new WOW().init();
     function calculate(){
         let sum = parseInt($("#site option:selected").val()) + parseInt($("#desing option:selected").val()) + parseInt($("#adaptability option:selected").val());
         let days = parseInt($("#site option:selected").attr("days")) + parseInt($("#desing option:selected").attr("days")) + parseInt($("#adaptability option:selected").attr("days"));
