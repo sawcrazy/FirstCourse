@@ -101,6 +101,28 @@ $(document).ready(function (){
             }
         })
     };
+    $("#inputphone").mask("+7(999) 999-9999");
+//    проверка для ввода данных
+    $('form').submit(function (event){
+        if($("#inpotphune").val() == "" ||$("#inputname").val() == "" ){
+            event.preventDefault();
+            alert("Введите в поле значение");
+        }
+    });
+    $("form").submit(function (event){
+        event.preventDefault();
+        $.ajax({
+            type: "POST",
+            url: "php/mail.php",
+            data: $(this).serialize()
+        }).done(function (){
+            $(this).find("input").val("");
+            alert("успешно отправлено");
+            $("form").trigger("reset");
+        });
+        return false;
+    });
+
 });
 
 
