@@ -129,6 +129,9 @@ nav a{
     }
 
 }
+.greetings__info a {
+    text-decoration: none;
+}
 .greetings__info h1 {
     font-size: 59px;
     font-weight: bold;
