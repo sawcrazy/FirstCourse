@@ -5,7 +5,7 @@ $(document).ready(function (){
         $('.modal').modal('show')
     };
 
-    // setTimeout(startModal,10000);
+    setTimeout(startModal,10000);
     new WOW().init();
     function calculate(){
         let sum = parseInt($("#site option:selected").val()) + parseInt($("#desing option:selected").val()) + parseInt($("#adaptability option:selected").val());
@@ -19,7 +19,7 @@ $(document).ready(function (){
     calculate();
     $('a[href^="#"]').click(function (){
         let valHref = $(this).attr("href");
-        $('html, body').animate({scrollTop: $(valHref).offset().top - 62 + "px"})
+        $('html, body').animate({scrollTop: $(valHref).offset().top - 60 + "px"})
     });
     $(window).scroll(() => {
         let scrollDistance = $(window).scrollTop();
@@ -82,10 +82,13 @@ $(document).ready(function (){
     function onEntryStat(entry){
         entry.forEach(change => {
             if(change.isIntersecting){
+                if($(change).hasClass('show-animation_stat') === false){
+                    changeNumber();
+                }
                 change.target.classList.add('show-animation_stat');
-                changeNumber();
             }
-        })
+
+        });
     };
     function onEntryText(entry){
         entry.forEach(change => {
