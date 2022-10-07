@@ -56,9 +56,9 @@ $(document).ready(function (){
     let observerText = new IntersectionObserver(onEntryText,options);
     let observerImg = new IntersectionObserver(onEntryImg,options);
     let elements = $('.element-animation');
-    let elementsStat = $('.element-animation');
-    let elementsText = $('.element-animation');
-    let elementsImg = $('.element-animation');
+    let elementsStat = $('.element-animation-start');
+    let elementsText = $('.element-animation-text');
+    let elementsImg = $('.element-animation-img');
     elements.each((i,el) =>{
         observer.observe(el)
     });
