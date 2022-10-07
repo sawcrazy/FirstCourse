@@ -56,9 +56,9 @@ $(document).ready(function (){
     let observerText = new IntersectionObserver(onEntryText,options);
     let observerImg = new IntersectionObserver(onEntryImg,options);
     let elements = $('.element-animation');
-    let elementsStat = $('.element-animation-start');
-    let elementsText = $('.element-animation-text');
-    let elementsImg = $('.element-animation-img');
+    let elementsStat = $('.number');
+    let elementsText = $('.element-animation');
+    let elementsImg = $('.element-animation');
     elements.each((i,el) =>{
         observer.observe(el)
     });
@@ -79,12 +79,12 @@ $(document).ready(function (){
             }
         })
     };
+    let flag = true;
     function onEntryStat(entry){
         entry.forEach(change => {
-            if(change.isIntersecting){
-                if($(change).hasClass('show-animation_stat') === false){
-                    changeNumber();
-                }
+            if(change.isIntersecting && flag){
+                flag = false;
+                changeNumber();
                 change.target.classList.add('show-animation_stat');
             }
 
