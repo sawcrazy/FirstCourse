@@ -5,7 +5,7 @@ $(document).ready(function (){
         $('.modal').modal('show')
     };
 
-    setTimeout(startModal,10000);
+   // setTimeout(startModal,10000);
     new WOW().init();
     function calculate(){
         let sum = parseInt($("#site option:selected").val()) + parseInt($("#desing option:selected").val()) + parseInt($("#adaptability option:selected").val());
@@ -19,11 +19,14 @@ $(document).ready(function (){
     calculate();
     $('a[href^="#"]').click(function (){
         let valHref = $(this).attr("href");
-        $('html, body').animate({scrollTop: $(valHref).offset().top - 60 + "px"})
+        $('html, body').animate({scrollTop: $(valHref).offset().top - 59 + "px"})
     });
     $(window).scroll(() => {
         let scrollDistance = $(window).scrollTop();
+        
         $('.section').each((i, el) => {
+
+            
             if ($(el).offset().top - $('nav').outerHeight() <= scrollDistance) {
                 $('nav a').each((i, el) => {
                     if ($(el).hasClass('active')) {
@@ -33,6 +36,7 @@ $(document).ready(function (){
                 $('nav li:eq(' + i + ')').find('a').addClass('active');
             }
         });
+
     });
     function changeNumber(){
         $('.number').each(function (){
@@ -51,34 +55,17 @@ $(document).ready(function (){
     $('.image-link').magnificPopup({type:'image'});
 
     let options = {threshold:[0.01]};
-    let observer = new IntersectionObserver(onEntry,options);
     let observerStat = new IntersectionObserver(onEntryStat,options);
-    let observerText = new IntersectionObserver(onEntryText,options);
     let observerImg = new IntersectionObserver(onEntryImg,options);
-    let elements = $('.element-animation');
-    let elementsStat = $('.number');
-    let elementsText = $('.element-animation');
-    let elementsImg = $('.element-animation');
-    elements.each((i,el) =>{
-        observer.observe(el)
-    });
+    let elementsStat = $('.element-animation');
+    let elementsImg = $('.element-animation-img');
     elementsStat.each((i,el) =>{
         observerStat.observe(el)
-    });
-    elementsText.each((i,el) =>{
-        observerText.observe(el)
     });
     elementsImg.each((i,el) =>{
         observerImg.observe(el)
     });
 
-    function onEntry(entry){
-        entry.forEach(change => {
-            if(change.isIntersecting){
-                change.target.classList.add('show-animation');
-            }
-        })
-    };
     let flag = true;
     function onEntryStat(entry){
         entry.forEach(change => {
@@ -89,13 +76,6 @@ $(document).ready(function (){
             }
 
         });
-    };
-    function onEntryText(entry){
-        entry.forEach(change => {
-            if(change.isIntersecting){
-                change.target.classList.add('show-animation_text');
-            }
-        })
     };
     function onEntryImg(entry){
         entry.forEach(change => {
